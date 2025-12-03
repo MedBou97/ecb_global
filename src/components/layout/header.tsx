@@ -22,11 +22,11 @@ const navLinks = [
     icon: Building,
     href: '#services',
     subLinks: [
-      { href: '#', label: 'Company Valuation' },
-      { href: '#', label: 'Mergers & Acquisitions' },
-      { href: '#', label: 'Project Finance' },
-      { href: '#', label: 'Financial Restructuring' },
-      { href: '#', label: 'Investment Advisory' },
+      { href: '#', label: 'Investment Consulting' },
+      { href: '#', label: 'International Loans' },
+      { href: '#', label: 'Hermes Loans' },
+      { href: '#', label: 'International Restructuring' },
+      { href: '#', label: 'M&A (Merger & Acquisition)' },
     ],
   },
   {
