@@ -1,5 +1,4 @@
 import { AboutSection } from '@/components/sections/about';
-import { ContactSection } from '@/components/sections/contact';
 import { HeroSection } from '@/components/sections/hero';
 import { HighlightsSection } from '@/components/sections/highlights';
 import { ServicesSection } from '@/components/sections/services';
@@ -11,7 +10,6 @@ export default function Home() {
       <AboutSection />
       <ServicesSection />
       <HighlightsSection />
-      <ContactSection />
     </div>
   );
 }
