@@ -11,39 +11,39 @@ import {
 
 const services = [
   {
-    title: 'Hermes Loan Assessment',
+    title: 'Hermes Kredisi Değerlendirmesi',
     description:
-      "Assess your company's potential to utilize Hermes loans for international trade projects. Determine which projects qualify for this type of loan.",
+      "Şirketinizin uluslararası ticaret projelerinde Hermes kredilerinden yararlanma potansiyelini değerlendirin. Hangi projelerin bu tür bir kredi için uygun olduğunu belirleyin.",
     icon: ClipboardCheck,
   },
   {
-    title: 'Application Preparation',
+    title: 'Başvuru Hazırlığı',
     description:
-      'Preparation and management of the Hermes loan application process. Gathering the required documents, creating the application file, and monitoring the application process.',
+      'Hermes kredi başvuru sürecinin hazırlanması ve yönetimi. Gerekli belgelerin toplanması, başvuru dosyasının oluşturulması ve başvuru sürecinin izlenmesi.',
     icon: FileText,
   },
   {
-    title: 'Negotiation and Communication',
+    title: 'Müzakere ve İletişim',
     description:
-      'Negotiating Hermes loan agreements and ensuring communication between your company and financial institutions.',
+      'Hermes kredi sözleşmelerinin müzakere edilmesi ve şirketiniz ile finansal kurumlar arasındaki iletişimin sağlanması.',
     icon: MessageSquareQuote,
   },
   {
-    title: 'Risk Management',
+    title: 'Risk Yönetimi',
     description:
-      'Managing financial and commercial risks that may arise from Hermes loans. Analyzing project and transaction risks and determining appropriate risk management strategies.',
+      'Hermes kredilerinden doğabilecek finansal ve ticari risklerin yönetimi. Proje ve işlem risklerinin analizi ve uygun risk yönetimi stratejilerinin belirlenmesi.',
     icon: ShieldCheck,
   },
   {
-    title: 'International Legal and Financial Consulting',
+    title: 'Uluslararası Hukuki ve Finansal Danışmanlık',
     description:
-      'Consulting services on international legal and financial matters related to Hermes loans. Legal review of loan agreements and the development of strategies to protect your company\'s interests.',
+      'Hermes kredileriyle ilgili uluslararası hukuki ve finansal konularda danışmanlık hizmetleri. Kredi sözleşmelerinin hukuki incelemesi ve şirketinizin çıkarlarını korumak için stratejiler geliştirilmesi.',
     icon: Briefcase,
   },
   {
-    title: 'Reporting and Tracking',
+    title: 'Raporlama ve Takip',
     description:
-      'Managing the reporting and tracking processes after the Hermes loan is disbursed. Monitoring the loan repayment plan and preparing the necessary reports.',
+      'Hermes kredisi kullandırıldıktan sonra raporlama ve takip süreçlerinin yönetimi. Kredi geri ödeme planının izlenmesi ve gerekli raporların hazırlanması.',
     icon: TrendingUp,
   },
 ];
@@ -54,7 +54,7 @@ export default function HermesLoansPage() {
       <section className="relative h-80 w-full">
         <Image
           src="https://images.unsplash.com/photo-1561464363-39458c035a0d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxnZXJtYW4lMjBleHBvcnR8ZW58MHx8fHwxNzY1Mzg5NDY4fDA&ixlib=rb-4.1.0&q=80&w=1080"
-          alt="Hermes Loans"
+          alt="Hermes Kredileri"
           fill
           className="object-cover"
           priority
@@ -63,7 +63,7 @@ export default function HermesLoansPage() {
         <div className="absolute inset-0 bg-black/60" />
         <div className="relative z-10 flex h-full flex-col items-center justify-center text-center">
           <h1 className="text-4xl font-extrabold tracking-tight text-white sm:text-5xl md:text-6xl font-headline">
-            Hermes Loans
+            Hermes Kredileri
           </h1>
         </div>
       </section>
@@ -72,12 +72,12 @@ export default function HermesLoansPage() {
         <div className="container mx-auto px-4 md:px-6">
           <div className="max-w-4xl mx-auto">
             <p className="text-lg text-muted-foreground mb-12 text-center">
-              Hermes loans are a financing tool backed by the German government and used in international trade transactions. These loans typically represent financing provided by exporting companies to their buyers abroad.
+              Hermes kredileri, Alman hükümeti tarafından desteklenen ve uluslararası ticaret işlemlerinde kullanılan bir finansman aracıdır. Bu krediler genellikle ihracatçı firmaların yurt dışındaki alıcılarına sağladığı finansmanı temsil eder.
             </p>
 
             <Card className="shadow-lg">
               <CardHeader>
-                <CardTitle className="font-headline text-2xl">Advisory Services for Hermes Loans</CardTitle>
+                <CardTitle className="font-headline text-2xl">Hermes Kredileri İçin Danışmanlık Hizmetleri</CardTitle>
               </CardHeader>
               <CardContent className="grid gap-8 md:grid-cols-1">
                 {services.map((service) => (
@@ -95,7 +95,7 @@ export default function HermesLoansPage() {
             </Card>
 
             <p className="text-lg text-muted-foreground mt-12 text-center">
-              These consulting services ensure financial success and reliability by ensuring your company makes the most of Hermes loans in its international trade projects.
+              Bu danışmanlık hizmetleri, şirketinizin uluslararası ticaret projelerinde Hermes kredilerinden en iyi şekilde yararlanmasını sağlayarak finansal başarı ve güvenilirlik sağlar.
             </p>
           </div>
         </div>

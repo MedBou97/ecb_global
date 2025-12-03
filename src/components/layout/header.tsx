@@ -18,51 +18,51 @@ import { EcbLogo } from '../icons';
 
 const navLinks = [
   {
-    label: 'Corporate Finance',
+    label: 'Kurumsal Finansman',
     icon: Building,
     href: '#services',
     subLinks: [
-      { href: '/investment-consulting', label: 'Investment Consulting', icon: Building },
-      { href: '/international-loans', label: 'International Loans', icon: Globe },
-      { href: '/hermes-loans', label: 'Hermes Loans', icon: Handshake },
-      { href: '#', label: 'International Restructuring', icon: Building },
-      { href: '#', label: 'M&A (Merger & Acquisition)', icon: Building },
+      { href: '/investment-consulting', label: 'Yatırım Danışmanlığı', icon: Building },
+      { href: '/international-loans', label: 'Uluslararası Krediler', icon: Globe },
+      { href: '/hermes-loans', label: 'Hermes Kredileri', icon: Handshake },
+      { href: '#', label: 'Uluslararası Yeniden Yapılandırma', icon: Building },
+      { href: '#', label: 'M&A (Birleşme ve Satın Alma)', icon: Handshake },
     ],
   },
   {
-    label: 'Corporate Governance',
+    label: 'Kurumsal Yönetim',
     icon: Landmark,
     href: '#services',
     subLinks: [
-      { href: '#', label: 'Enterprise Risk Management', icon: Landmark },
-      { href: '#', label: 'Institutionalization in Family Businesses', icon: Landmark },
-      { href: '#', label: 'Sustainability', icon: Landmark },
+      { href: '#', label: 'Kurumsal Risk Yönetimi', icon: Landmark },
+      { href: '#', label: 'Aile Şirketlerinde Kurumsallaşma', icon: Landmark },
+      { href: '#', label: 'Sürdürülebilirlik', icon: Landmark },
     ],
   },
-  { href: '#services', label: 'Public Offering', icon: TrendingUp },
+  { href: '#services', label: 'Halka Arz', icon: TrendingUp },
   {
-    label: 'Capital Market',
+    label: 'Sermaye Piyasası',
     icon: Handshake,
     href: '#services',
     subLinks: [
-      { href: '#', label: 'Venture Capital Investment Partnership', icon: Handshake },
-      { href: '#', label: 'Real Estate Investment Trust', icon: Handshake },
-      { href: '#', label: 'Real Estate Investment Fund', icon: Handshake },
-      { href: '#', label: 'Debt Instruments', icon: Handshake },
+      { href: '#', label: 'Girişim Sermayesi Yatırım Ortaklığı', icon: Handshake },
+      { href: '#', label: 'Gayrimenkul Yatırım Ortaklığı', icon: Handshake },
+      { href: '#', label: 'Gayrimenkul Yatırım Fonu', icon: Handshake },
+      { href: '#', label: 'Borçlanma Araçları', icon: Handshake },
     ],
   },
   {
-    label: 'Foreign Fund',
+    label: 'Yabancı Fon',
     icon: Globe,
     href: '#',
     subLinks: [
-      { href: '#', label: 'Fund Establishment', icon: Globe },
-      { href: '#', label: 'Structuring', icon: Globe },
-      { href: '#', label: 'Tax Planning', icon: Globe },
+      { href: '#', label: 'Fon Kurulumu', icon: Globe },
+      { href: '#', label: 'Yapılandırma', icon: Globe },
+      { href: '#', label: 'Vergi Planlaması', icon: Globe },
     ],
   },
   { href: '#', label: 'Blog', icon: Rss },
-  { href: '#contact', label: 'Communication', icon: Mail },
+  { href: '#contact', label: 'İletişim', icon: Mail },
 ];
 
 
@@ -100,7 +100,7 @@ export function Header() {
                   <DropdownMenuTrigger asChild>
                     <Button
                       variant="ghost"
-                      className="group flex items-center gap-1 rounded-md px-3 py-2 text-sm font-medium transition-colors hover:text-primary"
+                      className="group flex items-center gap-1 rounded-md px-3 py-2 text-sm font-medium transition-colors hover:bg-accent/50 hover:text-primary"
                     >
                       {link.label}
                       <ChevronDown className="h-4 w-4 transition-transform duration-200 group-data-[state=open]:rotate-180" />
@@ -137,7 +137,7 @@ export function Header() {
             <SheetTrigger asChild>
               <Button variant="ghost" size="icon">
                 <Menu className="h-6 w-6" />
-                <span className="sr-only">Toggle navigation menu</span>
+                <span className="sr-only">Navigasyon menüsünü aç</span>
               </Button>
             </SheetTrigger>
             <SheetContent side="right" className="w-full max-w-xs bg-background p-0">

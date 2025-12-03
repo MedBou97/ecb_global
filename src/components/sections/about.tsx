@@ -7,7 +7,7 @@ export function AboutSection() {
       <div className="container mx-auto px-4 md:px-6">
         <div className="text-center max-w-3xl mx-auto mb-12">
             <p className="text-lg md:text-xl text-muted-foreground">
-              Ecb Global Danışmanlık kendi alanında uzman ve tecrübeli kadrosu ile uçtan-uca bütüncül bir şekilde şirketlerin kurumsal alt yapılarının oluşturulmasını sağlar.
+              ECB Global Danışmanlık, kendi alanında uzman ve tecrübeli kadrosu ile uçtan uca bütüncül bir şekilde şirketlerin kurumsal altyapılarının oluşturulmasını sağlar.
             </p>
         </div>
         <div className="grid gap-8 md:grid-cols-1">
