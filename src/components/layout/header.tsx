@@ -21,7 +21,15 @@ const navLinks = [
   { href: '#services', label: 'Corporate Governance', icon: Landmark },
   { href: '#services', label: 'Public Offering', icon: TrendingUp },
   { href: '#services', label: 'Capital Markets', icon: Handshake },
-  { href: '#services', label: 'Foreign Funds', icon: Globe },
+  {
+    label: 'Foreign Fund',
+    icon: Globe,
+    subLinks: [
+      { href: '#', label: 'Fund Establishment' },
+      { href: '#', label: 'Structuring' },
+      { href: '#', label: 'Tax Planning' },
+    ],
+  },
   { href: '#', label: 'Blog', icon: Rss },
   { href: '#contact', label: 'Communication', icon: Mail },
 ];
@@ -73,7 +81,7 @@ export function Header() {
             ) : (
               <Link
                 key={link.label}
-                href={link.href}
+                href={link.href!}
                 className="text-sm font-medium transition-colors hover:text-primary"
               >
                 {link.label}
@@ -124,7 +132,7 @@ export function Header() {
                     ) : (
                       <Link
                         key={link.label}
-                        href={link.href}
+                        href={link.href!}
                         className="flex items-center gap-2 rounded-md py-2 text-base font-medium transition-colors hover:text-primary"
                         onClick={() => setOpen(false)}
                       >
