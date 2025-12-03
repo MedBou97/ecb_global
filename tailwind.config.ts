@@ -10,8 +10,8 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        body: ['"Roboto"', 'sans-serif'],
-        headline: ['"Montserrat"', 'sans-serif'],
+        body: ['"Inter"', 'sans-serif'],
+        headline: ['"Playfair Display"', 'serif'],
         logo: ['"Cinzel"', 'serif'],
         code: ['monospace'],
       },
