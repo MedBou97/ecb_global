@@ -86,7 +86,7 @@ export function Header() {
                 <DropdownMenuTrigger asChild>
                   <Button
                     variant="ghost"
-                    className="group flex items-center gap-1 text-sm font-medium transition-colors hover:text-primary rounded-md px-3 py-2"
+                    className="group flex items-center gap-1 text-sm font-medium transition-colors hover:text-accent-foreground rounded-md px-3 py-2"
                   >
                     {link.label}
                     <ChevronDown className="h-4 w-4 transition-transform duration-200 group-data-[state=open]:rotate-180" />
@@ -94,7 +94,7 @@ export function Header() {
                 </DropdownMenuTrigger>
                 <DropdownMenuContent 
                   align="start"
-                  className="w-64"
+                  className="w-64 bg-background/80 backdrop-blur-xl"
                 >
                   {link.subLinks.map((subLink) => (
                     <DropdownMenuItem key={subLink.label} asChild>
@@ -110,7 +110,7 @@ export function Header() {
               <Link
                 key={link.label}
                 href={link.href!}
-                className="text-sm font-medium transition-colors hover:text-primary rounded-md px-3 py-2"
+                className="text-sm font-medium transition-colors hover:bg-accent hover:text-accent-foreground rounded-md px-3 py-2"
               >
                 {link.label}
               </Link>
