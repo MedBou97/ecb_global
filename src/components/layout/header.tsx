@@ -3,7 +3,7 @@
 
 import * as React from 'react';
 import Link from 'next/link';
-import { Menu, Building, Landmark, TrendingUp, Handshake, Globe, Rss, Mail, ChevronDown, Rocket, Home, FileSignature, Briefcase } from 'lucide-react';
+import { Menu, Building, Landmark, TrendingUp, Handshake, Globe, Mail, ChevronDown, Rocket, Home, FileSignature, Briefcase } from 'lucide-react';
 
 import { cn } from '@/lib/utils';
 import { Button } from '@/components/ui/button';
@@ -62,7 +62,6 @@ const navLinks = [
       { href: '/vergi-planlamasi', label: 'Vergi Planlaması', icon: Globe },
     ],
   },
-  { href: '#contact', label: 'İletişim', icon: Mail },
 ];
 
 
@@ -132,6 +131,9 @@ export function Header() {
               </Button>
             )
           )}
+           <Button asChild>
+                <Link href="/#contact">İletişim</Link>
+            </Button>
         </nav>
         <div className="md:hidden">
           <Sheet open={mobileMenuOpen} onOpenChange={setMobileMenuOpen}>
@@ -186,6 +188,14 @@ export function Header() {
                       </Link>
                     )
                   )}
+                   <Link
+                        href="/#contact"
+                        className="flex items-center gap-2 rounded-md py-2 px-3 text-base font-medium transition-colors hover:bg-accent/50 hover:text-primary"
+                        onClick={() => setMobileMenuOpen(false)}
+                      >
+                        <Mail className="h-5 w-5" />
+                        <span>İletişim</span>
+                      </Link>
                   </Accordion>
                 </nav>
               </div>
