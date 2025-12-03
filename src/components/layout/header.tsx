@@ -21,7 +21,7 @@ const navLinks = [
   {
     label: 'Kurumsal Finansman',
     icon: Building,
-    href: '#services',
+    href: '/kurumsal-finansman',
     subLinks: [
       { href: '/investment-consulting', label: 'Yatırım Danışmanlığı', icon: Building },
       { href: '/international-loans', label: 'Uluslararası Krediler', icon: Globe },
@@ -99,12 +99,11 @@ export function Header() {
               >
                 <DropdownMenu open={openDropdown === link.label}>
                   <DropdownMenuTrigger asChild>
-                    <Button
-                      variant="ghost"
-                      className="group flex items-center gap-1 rounded-md px-3 py-2 text-sm font-medium transition-colors hover:bg-accent/50 hover:text-primary"
-                    >
-                      {link.label}
-                      <ChevronDown className="h-4 w-4 transition-transform duration-200 group-data-[state=open]:rotate-180" />
+                    <Button asChild variant="ghost" className="group flex items-center gap-1 rounded-md px-3 py-2 text-sm font-medium transition-colors hover:bg-accent/50 hover:text-primary">
+                      <Link href={link.href!}>
+                        {link.label}
+                        <ChevronDown className="h-4 w-4 transition-transform duration-200 group-data-[state=open]:rotate-180" />
+                      </Link>
                     </Button>
                   </DropdownMenuTrigger>
                   <DropdownMenuContent 
@@ -156,8 +155,10 @@ export function Header() {
                     link.subLinks ? (
                       <AccordionItem value={link.label} key={link.label} className="border-b-0">
                           <AccordionTrigger className="flex w-full items-center gap-2 rounded-md py-2 px-3 text-base font-medium transition-colors hover:bg-accent/50 hover:no-underline justify-start">
+                            <Link href={link.href!} className="flex items-center gap-2" onClick={(e) => e.stopPropagation()}>
                              <link.icon className="h-5 w-5" />
                              <span>{link.label}</span>
+                            </Link>
                           </AccordionTrigger>
                           <AccordionContent className="pb-0 pl-8">
                             <div className="mt-2 flex flex-col gap-1">

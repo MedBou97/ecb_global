@@ -10,7 +10,7 @@ const servicesHighlights = [
   {
     id: 'service-feasibility',
     description: 'Kurumsal Finansman',
-    href: '#services',
+    href: '/kurumsal-finansman',
     subItems: [
       {label: 'Yatırım Danışmanlığı', href: '/investment-consulting'},
       {label: 'Uluslararası Krediler', href: '/international-loans'},
