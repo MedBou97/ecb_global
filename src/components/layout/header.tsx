@@ -59,7 +59,7 @@ const navLinks = [
     subLinks: [
       { href: '/fon-kurulumu', label: 'Fon Kurulumu', icon: Globe },
       { href: '/yapilandirma', label: 'Yapılandırma', icon: Globe },
-      { href: '#', label: 'Vergi Planlaması', icon: Globe },
+      { href: '/vergi-planlamasi', label: 'Vergi Planlaması', icon: Globe },
     ],
   },
   { href: '#', label: 'Blog', icon: Rss },

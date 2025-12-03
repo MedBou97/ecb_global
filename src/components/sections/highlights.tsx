@@ -53,7 +53,7 @@ const servicesHighlights = [
     subItems: [
       {label: 'Fon Kurulumu', href: '/fon-kurulumu'}, 
       {label: 'Yapılandırma', href: '/yapilandirma'}, 
-      {label: 'Vergi Planlaması', href: '#'}
+      {label: 'Vergi Planlaması', href: '/vergi-planlamasi'}
     ],
   },
 ];
