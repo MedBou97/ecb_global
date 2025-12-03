@@ -13,7 +13,7 @@ import {
   DropdownMenuTrigger,
 } from '@/components/ui/dropdown-menu';
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
-import { ApexLogo } from '@/components/icons';
+import { EcbLogo } from '@/components/icons';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '../ui/accordion';
 
 const navLinks = [
@@ -52,12 +52,9 @@ export function Header() {
         isScrolled ? 'bg-background/80 shadow-md backdrop-blur-sm' : 'bg-transparent'
       )}
     >
-      <div className="container mx-auto flex h-16 items-center justify-between px-4 md:px-6">
+      <div className="container mx-auto flex h-20 items-center justify-between px-4 md:px-6">
         <Link href="/" className="flex items-center gap-2" aria-label="ECB Global Home">
-          <ApexLogo className="h-6 w-6 text-primary" />
-          <span className="hidden text-xl font-semibold text-primary sm:inline-block font-headline">
-            ECB Global
-          </span>
+          <EcbLogo className="h-12 w-auto" />
         </Link>
         <nav className="hidden items-center gap-6 md:flex">
           {navLinks.map((link) =>
@@ -101,8 +98,7 @@ export function Header() {
             <SheetContent side="right" className="w-full max-w-xs bg-background">
               <div className="flex h-full flex-col p-6">
                 <Link href="/" className="mb-8 flex items-center gap-2" onClick={() => setOpen(false)}>
-                  <ApexLogo className="h-6 w-6 text-primary" />
-                  <span className="text-xl font-semibold text-primary font-headline">ECB Global</span>
+                  <EcbLogo className="h-10 w-auto" />
                 </Link>
                 <nav className="flex flex-col gap-4">
                   {navLinks.map((link) =>
