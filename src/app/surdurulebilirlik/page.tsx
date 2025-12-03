@@ -42,12 +42,12 @@ export default function SustainabilityPage() {
     <>
       <section className="relative h-80 w-full">
         <Image
-          src="https://images.unsplash.com/photo-1532938911079-1b06ac7ceec7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxzdXN0YWluYWJpbGl0eXxlbnwwfHx8fDE3NjUzODk0Njh8MA&ixlib=rb-4.1.0&q=80&w=1080"
+          src="https://images.unsplash.com/photo-1603460893099-55272a2c2192?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxzdXN0YWluYWJsZSUyMGJ1c2luZXNzfGVufDB8fHx8MTc2NTM5ODQxNnww&ixlib=rb-4.1.0&q=80&w=1080"
           alt="Sürdürülebilirlik"
           fill
           className="object-cover"
           priority
-          data-ai-hint="sustainability environment"
+          data-ai-hint="sustainable business"
         />
         <div className="absolute inset-0 bg-black/60" />
         <div className="relative z-10 flex h-full flex-col items-center justify-center text-center">
