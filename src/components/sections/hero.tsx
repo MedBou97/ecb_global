@@ -27,7 +27,7 @@ export function HeroSection() {
               Driving Success Through Expert Strategy
             </h1>
             <p className="mt-6 text-lg text-gray-200 md:text-xl">
-              At Apex Consulting, we partner with you to unlock your business's full potential. Our innovative solutions and data-driven insights pave the way for sustainable growth and market leadership.
+              At ECB Global, we partner with you to unlock your business's full potential. Our innovative solutions and data-driven insights pave the way for sustainable growth and market leadership.
             </p>
             <div className="mt-10">
               <Button asChild size="lg" className="bg-accent text-accent-foreground hover:bg-accent/90">

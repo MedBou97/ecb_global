@@ -8,7 +8,7 @@ const teamMembers = [
     id: 'team-member-1',
     name: 'Jane Doe',
     role: 'Founder & CEO',
-    bio: 'With over 20 years of experience, Jane leads Apex with a passion for innovation and a commitment to client success.',
+    bio: 'With over 20 years of experience, Jane leads ECB Global with a passion for innovation and a commitment to client success.',
   },
   {
     id: 'team-member-2',

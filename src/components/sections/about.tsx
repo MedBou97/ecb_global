@@ -25,7 +25,7 @@ export function AboutSection() {
       <div className="container mx-auto px-4 md:px-6">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold font-headline">
-            The Apex Advantage
+            The ECB Global Advantage
           </h2>
           <p className="mt-4 text-lg text-muted-foreground max-w-2xl mx-auto">
             We are a team of dedicated professionals committed to excellence and innovation. Discover the principles that guide our success.
@@ -49,7 +49,7 @@ export function AboutSection() {
         <div className="mt-16 text-center max-w-3xl mx-auto">
           <h3 className="text-2xl font-bold font-headline">Our History</h3>
           <p className="mt-4 text-muted-foreground">
-            Founded in 2010, Apex Consulting was born from a desire to provide more than just advice. We aimed to become true partners to our clients. Over the past decade, we have grown from a small team of passionate experts into a leading firm, helping hundreds of businesses navigate complex challenges and seize new opportunities. Our journey is a testament to the power of strategic collaboration and a relentless pursuit of excellence.
+            Founded in 2010, ECB Global was born from a desire to provide more than just advice. We aimed to become true partners to our clients. Over the past decade, we have grown from a small team of passionate experts into a leading firm, helping hundreds of businesses navigate complex challenges and seize new opportunities. Our journey is a testament to the power of strategic collaboration and a relentless pursuit of excellence.
           </p>
         </div>
       </div>

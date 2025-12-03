@@ -13,19 +13,19 @@ import { Quote } from 'lucide-react';
 const testimonials = [
   {
     id: 'testimonial-avatar-1',
-    quote: "Apex Consulting transformed our business. Their strategic insights were game-changing, leading to a 40% increase in revenue. We couldn't have done it without them.",
+    quote: "ECB Global transformed our business. Their strategic insights were game-changing, leading to a 40% increase in revenue. We couldn't have done it without them.",
     author: 'Sarah Lee',
     company: 'CEO, Innovate Corp',
   },
   {
     id: 'testimonial-avatar-2',
-    quote: "The team at Apex is unparalleled. Their dedication and expertise in financial advisory provided us with the clarity and confidence we needed to secure our Series B funding.",
+    quote: "The team at ECB Global is unparalleled. Their dedication and expertise in financial advisory provided us with the clarity and confidence we needed to secure our Series B funding.",
     author: 'David Chen',
     company: 'Founder, Enterprise Solutions',
   },
   {
     id: 'testimonial-avatar-3',
-    quote: "Working with Apex on our marketing strategy was a fantastic experience. They are creative, data-driven, and truly understand how to build a brand in the modern age.",
+    quote: "Working with ECB Global on our marketing strategy was a fantastic experience. They are creative, data-driven, and truly understand how to build a brand in the modern age.",
     author: 'Maria Garcia',
     company: 'CMO, Future Tech',
   },

@@ -82,8 +82,8 @@ export function ContactSection() {
                 <Mail className="h-6 w-6 text-accent" />
                 <div>
                   <h3 className="font-semibold">Email</h3>
-                  <a href="mailto:contact@apexconsulting.com" className="text-muted-foreground hover:text-primary">
-                    contact@apexconsulting.com
+                  <a href="mailto:info@ecbglobal.com.tr" className="text-muted-foreground hover:text-primary">
+                    info@ecbglobal.com.tr
                   </a>
                 </div>
               </div>
@@ -93,8 +93,8 @@ export function ContactSection() {
                 <Phone className="h-6 w-6 text-accent" />
                 <div>
                   <h3 className="font-semibold">Phone</h3>
-                  <a href="tel:+1234567890" className="text-muted-foreground hover:text-primary">
-                    (123) 456-7890
+                  <a href="tel:+905324168827" className="text-muted-foreground hover:text-primary">
+                    +90 532 416 88 27
                   </a>
                 </div>
               </div>
@@ -104,7 +104,7 @@ export function ContactSection() {
                 <MapPin className="h-6 w-6 text-accent" />
                 <div>
                   <h3 className="font-semibold">Office</h3>
-                  <p className="text-muted-foreground">123 Strategy Lane, Innovation City, 12345</p>
+                  <p className="text-muted-foreground">Hadımköy, Şahmaran Sk., 34555 Arnavutköy/Istanbul</p>
                 </div>
               </div>
             </Card>

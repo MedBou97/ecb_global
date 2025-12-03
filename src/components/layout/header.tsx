@@ -53,10 +53,10 @@ export function Header() {
       )}
     >
       <div className="container mx-auto flex h-16 items-center justify-between px-4 md:px-6">
-        <Link href="/" className="flex items-center gap-2" aria-label="Apex Consulting Home">
+        <Link href="/" className="flex items-center gap-2" aria-label="ECB Global Home">
           <ApexLogo className="h-6 w-6 text-primary" />
           <span className="hidden text-xl font-semibold text-primary sm:inline-block font-headline">
-            Apex Consulting
+            ECB Global
           </span>
         </Link>
         <nav className="hidden items-center gap-6 md:flex">
@@ -102,7 +102,7 @@ export function Header() {
               <div className="flex h-full flex-col p-6">
                 <Link href="/" className="mb-8 flex items-center gap-2" onClick={() => setOpen(false)}>
                   <ApexLogo className="h-6 w-6 text-primary" />
-                  <span className="text-xl font-semibold text-primary font-headline">Apex Consulting</span>
+                  <span className="text-xl font-semibold text-primary font-headline">ECB Global</span>
                 </Link>
                 <nav className="flex flex-col gap-4">
                   {navLinks.map((link) =>
