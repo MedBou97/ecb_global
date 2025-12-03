@@ -72,9 +72,9 @@ export function HighlightsSection() {
           <h2 className="text-3xl font-bold tracking-tight text-foreground sm:text-4xl font-headline">Hizmetlerimiz</h2>
           <p className="mt-4 text-lg text-muted-foreground">Görsel bir bakışla sunduğumuz temel hizmet alanları.</p>
         </div>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 items-start">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 items-stretch justify-center">
           {highlightImages.map((image, index) => (
-             <Link key={image.id} href={image.href} className="block group">
+             <Link key={image.id} href={image.href} className="block group flex flex-col">
               <div className="relative aspect-[4/5] overflow-hidden rounded-lg shadow-lg mb-4">
                 {image.imageUrl && (
                   <Image
@@ -90,7 +90,7 @@ export function HighlightsSection() {
                   </div>
               </div>
               {image.subItems && image.subItems.length > 0 && (
-                <ul className="space-y-2 mt-4 text-sm">
+                <ul className="space-y-2 mt-4 text-sm flex-grow">
                   {image.subItems.map((item) => (
                     <li key={item} className="flex items-start text-muted-foreground">
                       <Check className="h-4 w-4 text-primary mr-2 mt-0.5 flex-shrink-0" />
