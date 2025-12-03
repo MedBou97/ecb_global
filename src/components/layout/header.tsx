@@ -2,7 +2,7 @@
 
 import * as React from 'react';
 import Link from 'next/link';
-import { Menu, Info, Briefcase, Users, MessageSquare, Contact } from 'lucide-react';
+import { Menu, Building, Landmark, TrendingUp, Handshake, Globe, Rss, Mail } from 'lucide-react';
 
 import { cn } from '@/lib/utils';
 import { Button } from '@/components/ui/button';
@@ -17,21 +17,15 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '..
 import { EcbLogo } from '../icons';
 
 const navLinks = [
-  { href: '#about', label: 'About', icon: Info },
-  {
-    href: '#services',
-    label: 'Services',
-    icon: Briefcase,
-    subLinks: [
-      { href: '#services', label: 'Strategic Consulting' },
-      { href: '#services', label: 'Financial Advisory' },
-      { href: '#services', label: 'Marketing Solutions' },
-    ],
-  },
-  { href: '#team', label: 'Our Team', icon: Users },
-  { href: '#testimonials', label: 'Testimonials', icon: MessageSquare },
-  { href: '#contact', label: 'Contact', icon: Contact },
+  { href: '#services', label: 'Corporate Finance', icon: Building },
+  { href: '#services', label: 'Corporate Governance', icon: Landmark },
+  { href: '#services', label: 'Public Offering', icon: TrendingUp },
+  { href: '#services', label: 'Capital Markets', icon: Handshake },
+  { href: '#services', label: 'Foreign Funds', icon: Globe },
+  { href: '#', label: 'Blog', icon: Rss },
+  { href: '#contact', label: 'Communication', icon: Mail },
 ];
+
 
 export function Header() {
   const [isScrolled, setIsScrolled] = React.useState(false);
