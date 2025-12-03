@@ -34,7 +34,7 @@ export default function InternationalLoansPage() {
       <section className="py-16 md:py-24 bg-background">
         <div className="container mx-auto px-4 md:px-6">
           <div className="max-w-4xl mx-auto">
-            <p className="text-lg text-muted-foreground mb-12 text-center">
+            <p className="text-lg text-foreground mb-12 text-center">
               Şirketlerin uluslararası finansman ihtiyaçlarını karşılamak ve uluslararası yatırımlarını desteklemek için uzman danışmanlık hizmetleri sunuyoruz. Uluslararası kredi danışmanlığımız, müşterilerimize küresel finansal piyasalarda doğru kredi ürünlerini seçme, finansal yapılarını optimize etme ve risk yönetimlerini iyileştirme konularında rehberlik etmektedir.
             </p>
 
@@ -54,7 +54,7 @@ export default function InternationalLoansPage() {
               </CardContent>
             </Card>
 
-            <p className="text-lg text-muted-foreground mt-12 text-center">
+            <p className="text-lg text-foreground mt-12 text-center">
               Küresel iş dünyasında başarıya ulaşmak için doğru finansman stratejileri ve kapsamlı risk yönetimi çok önemlidir. Uluslararası kredi danışmanlığındaki uzman ekibimiz bu alanlarda size destek olmak için burada.
             </p>
           </div>

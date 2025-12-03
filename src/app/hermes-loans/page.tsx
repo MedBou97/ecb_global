@@ -71,7 +71,7 @@ export default function HermesLoansPage() {
       <section className="py-16 md:py-24 bg-background">
         <div className="container mx-auto px-4 md:px-6">
           <div className="max-w-4xl mx-auto">
-            <p className="text-lg text-muted-foreground mb-12 text-center">
+            <p className="text-lg text-foreground mb-12 text-center">
               Hermes kredileri, Alman hükümeti tarafından desteklenen ve uluslararası ticaret işlemlerinde kullanılan bir finansman aracıdır. Bu krediler genellikle ihracatçı firmaların yurt dışındaki alıcılarına sağladığı finansmanı temsil eder.
             </p>
 
@@ -94,7 +94,7 @@ export default function HermesLoansPage() {
               </CardContent>
             </Card>
 
-            <p className="text-lg text-muted-foreground mt-12 text-center">
+            <p className="text-lg text-foreground mt-12 text-center">
               Bu danışmanlık hizmetleri, şirketinizin uluslararası ticaret projelerinde Hermes kredilerinden en iyi şekilde yararlanmasını sağlayarak finansal başarı ve güvenilirlik sağlar.
             </p>
           </div>

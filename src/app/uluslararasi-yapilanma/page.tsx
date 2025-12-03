@@ -65,7 +65,7 @@ export default function InternationalStructuringPage() {
       <section className="py-16 md:py-24 bg-background">
         <div className="container mx-auto px-4 md:px-6">
           <div className="max-w-4xl mx-auto">
-            <p className="text-lg text-muted-foreground mb-12 text-center">
+            <p className="text-lg text-foreground mb-12 text-center">
               Şirketlerin küresel pazarda başarılı bir şekilde faaliyet gösterebilmesi için gerekli olan yapılanma ve stratejik adımları belirleme sürecinde uzman danışmanlık hizmetleri sunuyoruz. Uluslararası yapılanma danışmanlığı kapsamında, şirketlerin küresel vizyonlarını gerçeğe dönüştürebilmeleri için gereken adımları planlıyor ve uygulamalarını sağlıyoruz.
             </p>
 
@@ -88,7 +88,7 @@ export default function InternationalStructuringPage() {
               </CardContent>
             </Card>
 
-            <p className="text-lg text-muted-foreground mt-12 text-center">
+            <p className="text-lg text-foreground mt-12 text-center">
               Uluslararası yapılanma danışmanlığı hizmetleriyle şirketinizin küresel pazarda başarılı ve sürdürülebilir bir şekilde büyümesini destekliyoruz. Müşterilerimizin ihtiyaçlarına özel çözümler üretmek ve küresel rekabet ortamında güçlü bir konum elde etmelerini sağlamak için uzman ekibimizle birlikte çalışıyoruz.
             </p>
           </div>
