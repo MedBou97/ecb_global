@@ -37,7 +37,7 @@ const navLinks = [
     subLinks: [
       { href: '/kurumsal-risk-yonetimi', label: 'Kurumsal Risk Yönetimi', icon: Landmark },
       { href: '/aile-sirketlerinde-kurumsallasma', label: 'Aile Şirketlerinde Kurumsallaşma', icon: Landmark },
-      { href: '#', label: 'Sürdürülebilirlik', icon: Landmark },
+      { href: '/surdurulebilirlik', label: 'Sürdürülebilirlik', icon: Landmark },
     ],
   },
   { href: '#services', label: 'Halka Arz', icon: TrendingUp },

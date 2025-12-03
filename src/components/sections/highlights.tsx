@@ -26,7 +26,7 @@ const servicesHighlights = [
     subItems: [
       {label: 'Kurumsal Risk Yönetimi', href: '/kurumsal-risk-yonetimi'},
       {label: 'Aile Şirketlerinde Kurumsallaşma', href: '/aile-sirketlerinde-kurumsallasma'},
-      {label: 'Sürdürülebilirlik', href: '#'},
+      {label: 'Sürdürülebilirlik', href: '/surdurulebilirlik'},
     ],
   },
   {
