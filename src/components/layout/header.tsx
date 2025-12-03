@@ -37,7 +37,8 @@ const navLinks = [
 
 export function Header() {
   const [isScrolled, setIsScrolled] = React.useState(false);
-  const [open, setOpen] = React.useState(false);
+  const [mobileMenuOpen, setMobileMenuOpen] = React.useState(false);
+  const [foreignFundMenuOpen, setForeignFundMenuOpen] = React.useState(false);
 
   React.useEffect(() => {
     const handleScroll = () => {
@@ -61,16 +62,22 @@ export function Header() {
         <nav className="hidden items-center gap-6 md:flex">
           {navLinks.map((link) =>
             link.subLinks ? (
-              <DropdownMenu key={link.label}>
+              <DropdownMenu key={link.label} open={foreignFundMenuOpen} onOpenChange={setForeignFundMenuOpen}>
                 <DropdownMenuTrigger asChild>
                   <Button
                     variant="ghost"
                     className="text-sm font-medium transition-colors hover:text-primary"
+                     onMouseEnter={() => setForeignFundMenuOpen(true)}
+                     onMouseLeave={() => setForeignFundMenuOpen(false)}
                   >
                     {link.label}
                   </Button>
                 </DropdownMenuTrigger>
-                <DropdownMenuContent align="start">
+                <DropdownMenuContent 
+                  align="start"
+                  onMouseEnter={() => setForeignFundMenuOpen(true)}
+                  onMouseLeave={() => setForeignFundMenuOpen(false)}
+                >
                   {link.subLinks.map((subLink) => (
                     <DropdownMenuItem key={subLink.label} asChild>
                       <Link href={subLink.href}>{subLink.label}</Link>
@@ -90,7 +97,7 @@ export function Header() {
           )}
         </nav>
         <div className="md:hidden">
-          <Sheet open={open} onOpenChange={setOpen}>
+          <Sheet open={mobileMenuOpen} onOpenChange={setMobileMenuOpen}>
             <SheetTrigger asChild>
               <Button variant="ghost" size="icon">
                 <Menu className="h-6 w-6" />
@@ -99,7 +106,7 @@ export function Header() {
             </SheetTrigger>
             <SheetContent side="right" className="w-full max-w-xs bg-background">
               <div className="flex h-full flex-col p-6">
-                <Link href="/" className="mb-8 flex items-center gap-2" onClick={() => setOpen(false)}>
+                <Link href="/" className="mb-8 flex items-center gap-2" onClick={() => setMobileMenuOpen(false)}>
                   <EcbLogo />
                 </Link>
                 <nav className="flex flex-col gap-4">
@@ -120,7 +127,7 @@ export function Header() {
                                 key={subLink.label}
                                 href={subLink.href}
                                 className="block rounded-md py-2 text-muted-foreground transition-colors hover:text-primary"
-                                onClick={() => setOpen(false)}
+                                onClick={() => setMobileMenuOpen(false)}
                               >
                                 {subLink.label}
                               </Link>
@@ -134,7 +141,7 @@ export function Header() {
                         key={link.label}
                         href={link.href!}
                         className="flex items-center gap-2 rounded-md py-2 text-base font-medium transition-colors hover:text-primary"
-                        onClick={() => setOpen(false)}
+                        onClick={() => setMobileMenuOpen(false)}
                       >
                         <link.icon className="h-5 w-5" />
                         <span>{link.label}</span>
