@@ -22,7 +22,7 @@ const navLinks = [
     icon: Building,
     href: '#services',
     subLinks: [
-      { href: '#', label: 'Investment Consulting', icon: Building },
+      { href: '/investment-consulting', label: 'Investment Consulting', icon: Building },
       { href: '#', label: 'International Loans', icon: Building },
       { href: '#', label: 'Hermes Loans', icon: Building },
       { href: '#', label: 'International Restructuring', icon: Building },
@@ -86,7 +86,7 @@ export function Header() {
                 <DropdownMenuTrigger asChild>
                   <Button
                     variant="ghost"
-                    className="group flex items-center gap-1 text-sm font-medium transition-colors hover:text-accent-foreground rounded-md px-3 py-2"
+                    className="group flex items-center gap-1 text-sm font-medium transition-colors hover:text-primary rounded-md px-3 py-2"
                   >
                     {link.label}
                     <ChevronDown className="h-4 w-4 transition-transform duration-200 group-data-[state=open]:rotate-180" />
