@@ -30,7 +30,7 @@ export function HeroSection() {
               Finans süreçlerini uçtan uca yönetecek uzman desteği için iletişime geçebilirsiniz.
             </p>
             <div className="mt-8">
-              <Button asChild size="lg">
+              <Button asChild size="lg" className="animate-pulse-slow">
                 <Link href="#contact">İletişime Geç</Link>
               </Button>
             </div>
