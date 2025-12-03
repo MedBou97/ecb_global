@@ -7,22 +7,28 @@
       "imageHint": "office building"
     },
     {
-      "id": "service-strategy",
-      "description": "People collaborating around a whiteboard with strategic notes.",
-      "imageUrl": "https://images.unsplash.com/photo-1758691737568-a1572060ce5a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8c3RyYXRlZ3klMjBtZWV0aW5nfGVufDB8fHx8MTc2NDc4OTM5Mnww&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "strategy meeting"
+      "id": "service-feasibility",
+      "description": "Fizibilite Hizmetleri",
+      "imageUrl": "https://images.unsplash.com/photo-1556740758-90de374c12ad?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxmZWFzaWJpbGl0eSUyMHN0dWR5fGVufDB8fHx8MTc2NDg5ODg5OXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "feasibility study"
     },
     {
-      "id": "service-finance",
-      "description": "A desk with financial charts, a calculator, and a pen.",
-      "imageUrl": "https://images.unsplash.com/photo-1745509267945-b25cbb4d50ef?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxmaW5hbmNlJTIwY2hhcnRzfGVufDB8fHx8MTc2NDc3Mjk2NXww&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "finance charts"
+      "id": "service-budget",
+      "description": "Bütçe ve Planlama",
+      "imageUrl": "https://images.unsplash.com/photo-1554224155-169544351742?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxhY2NvdW50aW5nJTIwYnVkZ2V0fGVufDB8fHx8MTc2NDg5ODg5OXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "budget planning"
     },
     {
-      "id": "service-marketing",
-      "description": "Creative marketing campaign assets being designed on a screen.",
-      "imageUrl": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxkaWdpdGFsJTIwbWFya2V0aW5nfGVufDB8fHx8MTc2NDc1NTQ3Mnww&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "digital marketing"
+      "id": "service-structuring",
+      "description": "Yapılandırma",
+      "imageUrl": "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxidXNpbmVzcyUyMHN0cnVjdHVyZXxlbnwwfHx8fDE3NjQ4OTg4OTl8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "business structure"
+    },
+    {
+      "id": "service-analysis",
+      "description": "Sektörel Analiz",
+      "imageUrl": "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxtYXJrZXQlMjBhbmFseXNpc3xlbnwwfHx8fDE3NjQ4OTg4OTl8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "market analysis"
     },
     {
       "id": "team-member-1",
