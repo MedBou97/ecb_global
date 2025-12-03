@@ -40,7 +40,7 @@ const navLinks = [
       { href: '/surdurulebilirlik', label: 'Sürdürülebilirlik', icon: Landmark },
     ],
   },
-  { href: '#services', label: 'Halka Arz', icon: TrendingUp },
+  { href: '/halka-arz', label: 'Halka Arz', icon: TrendingUp },
   {
     label: 'Sermaye Piyasası',
     icon: Handshake,

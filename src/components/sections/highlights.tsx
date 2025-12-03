@@ -32,7 +32,7 @@ const servicesHighlights = [
   {
     id: 'service-structuring',
     description: 'Halka Arz',
-    href: '#services',
+    href: '/halka-arz',
     subItems: [],
   },
   {
