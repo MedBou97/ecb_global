@@ -22,7 +22,7 @@ const servicesHighlights = [
   {
     id: 'service-governance',
     description: 'Kurumsal Yönetim',
-    href: '#services',
+    href: '/kurumsal-yonetim',
     subItems: [
       {label: 'Kurumsal Risk Yönetimi', href: '/kurumsal-risk-yonetimi'},
       {label: 'Aile Şirketlerinde Kurumsallaşma', href: '/aile-sirketlerinde-kurumsallasma'},
