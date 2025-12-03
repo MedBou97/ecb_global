@@ -23,7 +23,7 @@ export function Footer() {
         <div className="grid gap-12 lg:grid-cols-12">
           <div className="lg:col-span-4">
             <Link href="/" className="flex items-center gap-2 mb-4">
-              <EcbLogo className="h-16 w-auto" />
+              <EcbLogo />
             </Link>
             <div className="flex items-start gap-3 mt-4">
               <MapPin className="h-5 w-5 text-accent mt-1 flex-shrink-0" />

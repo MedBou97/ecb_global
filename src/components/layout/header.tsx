@@ -54,7 +54,7 @@ export function Header() {
     >
       <div className="container mx-auto flex h-20 items-center justify-between px-4 md:px-6">
         <Link href="/" className="flex items-center gap-2">
-          <EcbLogo className="h-12 w-auto" />
+          <EcbLogo />
         </Link>
         <nav className="hidden items-center gap-6 md:flex">
           {navLinks.map((link) =>
@@ -98,7 +98,7 @@ export function Header() {
             <SheetContent side="right" className="w-full max-w-xs bg-background">
               <div className="flex h-full flex-col p-6">
                 <Link href="/" className="mb-8 flex items-center gap-2" onClick={() => setOpen(false)}>
-                  <EcbLogo className="h-10 w-auto" />
+                  <EcbLogo />
                 </Link>
                 <nav className="flex flex-col gap-4">
                   {navLinks.map((link) =>
