@@ -62,7 +62,6 @@ const navLinks = [
       { href: '/vergi-planlamasi', label: 'Vergi Planlaması', icon: Globe },
     ],
   },
-  { href: '#', label: 'Blog', icon: Rss },
   { href: '#contact', label: 'İletişim', icon: Mail },
 ];
 

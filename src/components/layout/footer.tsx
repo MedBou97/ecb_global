@@ -12,7 +12,6 @@ const sectors = [
 
 const institutional = [
   { name: 'Hakkımızda', href: '#about' },
-  { name: 'Blog', href: '#' },
   { name: 'İletişim', href: '#contact' },
 ];
 
