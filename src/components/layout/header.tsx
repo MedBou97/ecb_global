@@ -24,7 +24,7 @@ const navLinks = [
     subLinks: [
       { href: '/investment-consulting', label: 'Investment Consulting', icon: Building },
       { href: '/international-loans', label: 'International Loans', icon: Building },
-      { href: '#', label: 'Hermes Loans', icon: Building },
+      { href: '/hermes-loans', label: 'Hermes Loans', icon: Building },
       { href: '#', label: 'International Restructuring', icon: Building },
       { href: '#', label: 'M&A (Merger & Acquisition)', icon: Building },
     ],
@@ -72,7 +72,7 @@ export function Header() {
   return (
     <header
       className={cn(
-        'sticky top-0 z-50 w-full transition-all duration-300 bg-background'
+        'sticky top-0 z-50 w-full transition-all duration-300 bg-background/95 backdrop-blur-sm'
       )}
     >
       <div className="container mx-auto flex h-20 items-center justify-between px-4 md:px-6">
@@ -86,7 +86,7 @@ export function Header() {
                 <DropdownMenuTrigger asChild>
                   <Button
                     variant="ghost"
-                    className="group flex items-center gap-1 text-sm font-medium transition-colors hover:text-primary rounded-md px-3 py-2"
+                    className="group flex items-center gap-1 text-sm font-medium transition-colors hover:bg-accent/50 hover:text-primary rounded-md px-3 py-2"
                   >
                     {link.label}
                     <ChevronDown className="h-4 w-4 transition-transform duration-200 group-data-[state=open]:rotate-180" />
@@ -110,7 +110,7 @@ export function Header() {
               <Link
                 key={link.label}
                 href={link.href!}
-                className="text-sm font-medium transition-colors hover:bg-accent hover:text-accent-foreground rounded-md px-3 py-2"
+                className="text-sm font-medium transition-colors hover:bg-accent/50 hover:text-primary rounded-md px-3 py-2"
               >
                 {link.label}
               </Link>
