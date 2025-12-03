@@ -26,7 +26,7 @@ const navLinks = [
       { href: '/international-loans', label: 'Uluslararası Krediler', icon: Globe },
       { href: '/hermes-loans', label: 'Hermes Kredileri', icon: Handshake },
       { href: '/uluslararasi-yapilanma', label: 'Uluslararası Yapılanma', icon: Building },
-      { href: '#', label: 'M&A (Birleşme ve Satın Alma)', icon: Handshake },
+      { href: '/mergers-and-acquisitions', label: 'M&A (Birleşme ve Satın Alma)', icon: Handshake },
     ],
   },
   {
@@ -122,13 +122,15 @@ export function Header() {
                 </DropdownMenu>
               </div>
             ) : (
-              <Link
-                key={link.label}
-                href={link.href!}
-                className="rounded-md px-3 py-2 text-sm font-medium transition-colors hover:bg-accent/50 hover:text-primary"
-              >
-                {link.label}
-              </Link>
+              <Button asChild variant="ghost">
+                <Link
+                  key={link.label}
+                  href={link.href!}
+                  className="rounded-md px-3 py-2 text-sm font-medium transition-colors hover:bg-accent/50 hover:text-primary"
+                >
+                  {link.label}
+                </Link>
+              </Button>
             )
           )}
         </nav>

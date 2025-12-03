@@ -15,7 +15,7 @@ const servicesHighlights = [
       {label: 'Uluslararası Krediler', href: '/international-loans'},
       {label: 'Hermes Kredileri', href: '/hermes-loans'},
       {label: 'Uluslararası Yapılanma', href: '/uluslararasi-yapilanma'},
-      {label: 'M&A (Birleşme ve Satın Alma)', href: '#'},
+      {label: 'M&A (Birleşme ve Satın Alma)', href: '/mergers-and-acquisitions'},
     ],
   },
   {
