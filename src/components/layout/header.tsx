@@ -77,6 +77,17 @@ export function Header() {
     setOpenDropdown(null);
   };
 
+  const scrollToContact = (e: React.MouseEvent<HTMLButtonElement | HTMLAnchorElement>) => {
+    e.preventDefault();
+    const contactElement = document.getElementById('contact');
+    if (contactElement) {
+      contactElement.scrollIntoView({ behavior: 'smooth' });
+    }
+    if (mobileMenuOpen) {
+      setMobileMenuOpen(false);
+    }
+  };
+
   return (
     <header
       className={cn(
@@ -131,9 +142,7 @@ export function Header() {
               </Button>
             )
           )}
-           <Button asChild>
-                <Link href="/#contact">İletişim</Link>
-            </Button>
+           <Button onClick={scrollToContact}>İletişim</Button>
         </nav>
         <div className="md:hidden">
           <Sheet open={mobileMenuOpen} onOpenChange={setMobileMenuOpen}>
@@ -188,14 +197,14 @@ export function Header() {
                       </Link>
                     )
                   )}
-                   <Link
-                        href="/#contact"
+                   <a
+                        href="#contact"
                         className="flex items-center gap-2 rounded-md py-2 px-3 text-base font-medium transition-colors hover:bg-accent/50 hover:text-primary"
-                        onClick={() => setMobileMenuOpen(false)}
+                        onClick={scrollToContact}
                       >
                         <Mail className="h-5 w-5" />
                         <span>İletişim</span>
-                      </Link>
+                      </a>
                   </Accordion>
                 </nav>
               </div>
