@@ -69,29 +69,29 @@ const highlightImages = servicesHighlights.map((service) => {
   };
 });
 
-const PyramidCard = ({ image, className }: { image: (typeof highlightImages)[0]; className?: string }) => (
+const ServiceCard = ({ item, className }: { item: (typeof highlightImages)[0]; className?: string }) => (
     <div className={cn("flex flex-col group", className)}>
-      <Link href={image.href} className="block relative aspect-[4/5] overflow-hidden rounded-lg shadow-lg mb-4">
-        {image.imageUrl && (
+      <Link href={item.href} className="block relative aspect-[4/5] overflow-hidden rounded-lg shadow-lg mb-4">
+        {item.imageUrl && (
           <Image
-            src={image.imageUrl}
-            alt={image.altText}
+            src={item.imageUrl}
+            alt={item.altText}
             fill
             className="object-cover transition-transform duration-300 group-hover:scale-105"
-            data-ai-hint={image.imageHint}
+            data-ai-hint={item.imageHint}
           />
         )}
           <div className="absolute inset-0 bg-black/40 flex items-end">
-            <h3 className="text-white font-semibold p-4 text-lg">{image.description}</h3>
+            <h3 className="text-white font-semibold p-4 text-lg">{item.description}</h3>
           </div>
       </Link>
-      {image.subItems && image.subItems.length > 0 && (
+      {item.subItems && item.subItems.length > 0 && (
         <ul className="space-y-2 mt-4 text-sm flex-grow">
-          {image.subItems.map((item) => (
-             <li key={item.label}>
-             <Link href={item.href} className="flex items-start text-muted-foreground transition-colors hover:text-primary">
+          {item.subItems.map((subItem) => (
+             <li key={subItem.label}>
+             <Link href={subItem.href} className="flex items-start text-muted-foreground transition-colors hover:text-primary">
                 <Check className="h-4 w-4 text-primary mr-2 mt-0.5 flex-shrink-0" />
-                <span>{item.label}</span>
+                <span>{subItem.label}</span>
               </Link>
             </li>
           ))}
@@ -102,9 +102,6 @@ const PyramidCard = ({ image, className }: { image: (typeof highlightImages)[0];
 
 
 export function HighlightsSection() {
-  const topRow = highlightImages.slice(0, 2);
-  const bottomRow = highlightImages.slice(2);
-
   return (
     <section id="highlights" className="py-16 md:py-24 bg-background">
       <div className="container mx-auto px-4 md:px-6">
@@ -112,19 +109,10 @@ export function HighlightsSection() {
           <h2 className="text-3xl font-bold tracking-tight text-foreground sm:text-4xl font-headline">Hizmetlerimiz</h2>
           <p className="mt-4 text-lg text-muted-foreground">Görsel bir bakışla sunduğumuz temel hizmet alanları.</p>
         </div>
-        <div className="flex flex-col items-center gap-8">
-            {/* Top row */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 w-full max-w-4xl">
-                {topRow.map((image) => (
-                    <PyramidCard key={image.id} image={image} />
-                ))}
-            </div>
-            {/* Bottom row */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 w-full">
-                {bottomRow.map((image) => (
-                    <PyramidCard key={image.id} image={image} />
-                ))}
-            </div>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+            {highlightImages.map((item) => (
+                <ServiceCard key={item.id} item={item} />
+            ))}
         </div>
       </div>
     </section>
