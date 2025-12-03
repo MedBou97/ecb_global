@@ -23,7 +23,7 @@ const navLinks = [
     href: '#services',
     subLinks: [
       { href: '/investment-consulting', label: 'Investment Consulting', icon: Building },
-      { href: '#', label: 'International Loans', icon: Building },
+      { href: '/international-loans', label: 'International Loans', icon: Building },
       { href: '#', label: 'Hermes Loans', icon: Building },
       { href: '#', label: 'International Restructuring', icon: Building },
       { href: '#', label: 'M&A (Merger & Acquisition)', icon: Building },
