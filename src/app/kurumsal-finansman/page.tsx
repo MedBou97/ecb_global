@@ -83,7 +83,7 @@ export default function CorporateFinancePage() {
       <section className="relative h-80 w-full">
         <Image
           src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxjb3Jwb3JhdGUlMjBmaW5hbmNlfGVufDB8fHx8MTc2NTY5ODQ3M3ww&ixlib=rb-4.1.0&q=80&w=1080"
-          alt="Kurumsal Finansman"
+          alt="Kurumsal Finans"
           fill
           className="object-cover"
           priority
@@ -92,10 +92,10 @@ export default function CorporateFinancePage() {
         <div className="absolute inset-0 bg-black/60" />
         <div className="relative z-10 flex h-full flex-col items-center justify-center text-center">
           <h1 className="text-4xl font-extrabold tracking-tight text-white sm:text-5xl md:text-6xl font-headline">
-            Kurumsal Finansman
+            Kurumsal Finans
           </h1>
           <p className="mt-4 max-w-2xl text-lg text-gray-200 md:text-xl">
-            Kurumsal Finansman ve Danışmanlık Hizmetleri
+            Kurumsal Finans ve Danışmanlık Hizmetleri
           </p>
         </div>
       </section>

@@ -1,3 +1,4 @@
+
 import Link from 'next/link';
 import { Linkedin, Facebook, Mail, Phone, MapPin, Instagram } from 'lucide-react';
 import { EcbLogo } from '../icons';
@@ -15,7 +16,7 @@ const XIcon = (props: React.SVGProps<SVGSVGElement>) => (
 
 
 const sectors = [
-  { name: 'Kurumsal Finansman', href: '/kurumsal-finansman' },
+  { name: 'Kurumsal Finans', href: '/kurumsal-finansman' },
   { name: 'Kurumsal Yönetim', href: '/kurumsal-yonetim' },
   { name: 'Halka Arz', href: '/halka-arz' },
   { name: 'Sermaye Piyasaları', href: '/sermaye-piyasasi' },

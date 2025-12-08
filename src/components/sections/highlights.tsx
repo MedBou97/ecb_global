@@ -12,7 +12,7 @@ import { AnimatedSection } from '../animated-section';
 const servicesHighlights = [
   {
     id: 'service-feasibility',
-    description: 'Kurumsal Finansman',
+    description: 'Kurumsal Finans',
     href: '/kurumsal-finansman',
     subItems: [
       {label: 'Yatırım Danışmanlığı', href: '/investment-consulting'},
@@ -139,5 +139,3 @@ export function HighlightsSection() {
     </section>
   );
 }
-
-    

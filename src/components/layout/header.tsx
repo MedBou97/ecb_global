@@ -32,7 +32,7 @@ import { EcbLogo } from '../icons';
 
 const navLinks = [
   {
-    label: 'Kurumsal Finansman',
+    label: 'Kurumsal Finans',
     icon: Building,
     href: '/kurumsal-finansman',
     subLinks: [
