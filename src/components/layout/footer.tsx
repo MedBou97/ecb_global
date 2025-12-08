@@ -26,6 +26,12 @@ const institutional = [
   { name: 'Hakkımızda', href: '#about' },
 ];
 
+const addresses = [
+    { text: "Hadımköy, Şahmaran Sk., 34555 Arnavutköy/İstanbul" },
+    { text: "Parc d Activities 2-4 Capellen L-8308 Luxembourg" },
+    { text: "2597 LC The Hague, The Netherlands" },
+];
+
 export function Footer() {
   return (
     <footer id="contact" className="bg-secondary text-secondary-foreground">
@@ -35,10 +41,7 @@ export function Footer() {
             <Link href="/" className="flex items-center gap-2 mb-4">
               <EcbLogo />
             </Link>
-            <div className="flex items-start gap-3 mt-4">
-              <MapPin className="h-5 w-5 text-accent mt-1 flex-shrink-0" />
-              <p className="text-sm text-muted-foreground">Hadımköy, Şahmaran Sk., 34555 Arnavutköy/İstanbul</p>
-            </div>
+            <p className="text-sm text-muted-foreground mt-4">Uzman Strateji ve İnovasyonla Başarıyı Destekliyoruz.</p>
           </div>
 
           <div className="lg:col-span-2">
@@ -82,6 +85,12 @@ export function Footer() {
                   info@ecbglobal.com.tr
                 </a>
               </div>
+              {addresses.map((address) => (
+                <div key={address.text} className="flex items-start gap-3">
+                    <MapPin className="h-5 w-5 text-accent mt-1 flex-shrink-0" />
+                    <p className="text-sm text-muted-foreground">{address.text}</p>
+                </div>
+              ))}
             </div>
           </div>
         </div>
