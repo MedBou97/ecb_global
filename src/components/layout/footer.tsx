@@ -23,9 +23,7 @@ const sectors = [
   { name: 'Yurt Dışı Fonlar', href: '/yabanci-fon' },
 ];
 
-const institutional = [
-  { name: 'Hakkımızda', href: '#about' },
-];
+
 
 const addresses = [
     { text: "Hadımköy, Şahmaran Sk., 34555 Arnavutköy/İstanbul" },
@@ -42,7 +40,6 @@ export function Footer() {
             <Link href="/" className="flex items-center gap-2 mb-4">
               <EcbLogo />
             </Link>
-            <p className="text-sm text-muted-foreground mt-4">Uzman Strateji ve İnovasyonla Başarıyı Destekliyoruz.</p>
           </div>
 
           <div className="lg:col-span-2">
@@ -58,38 +55,27 @@ export function Footer() {
             </ul>
           </div>
 
-          <div className="lg:col-span-2">
-            <h3 className="font-semibold font-headline tracking-wider text-foreground">Kurumsal</h3>
-            <ul className="mt-4 space-y-2">
-              {institutional.map((item) => (
-                <li key={item.name}>
-                  <Link href={item.href} className="text-sm text-muted-foreground transition-colors hover:text-primary">
-                    {item.name}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </div>
+          
 
           <div className="lg:col-span-4">
             <h3 className="font-semibold font-headline tracking-wider text-foreground">İletişim</h3>
             <div className="mt-4 space-y-3">
               <div className="flex items-center gap-3">
                 <Phone className="h-5 w-5 text-accent flex-shrink-0" />
-                <a href="tel:+905324168827" className="text-sm text-muted-foreground hover:text-primary">
+                <a href="tel:+905324168827" className="text-sm text-primary hover:text-primary/80">
                   +90 532 416 88 27
                 </a>
               </div>
               <div className="flex items-center gap-3">
                 <Mail className="h-5 w-5 text-accent flex-shrink-0" />
-                <a href="mailto:info@ecbglobal.com.tr" className="text-sm text-muted-foreground hover:text-primary">
+                <a href="mailto:info@ecbglobal.com.tr" className="text-sm text-primary hover:text-primary/80">
                   info@ecbglobal.com.tr
                 </a>
               </div>
               {addresses.map((address) => (
                 <div key={address.text} className="flex items-start gap-3">
                     <MapPin className="h-5 w-5 text-accent mt-1 flex-shrink-0" />
-                    <p className="text-sm text-muted-foreground">{address.text}</p>
+                    <p className="text-sm text-primary">{address.text}</p>
                 </div>
               ))}
             </div>
