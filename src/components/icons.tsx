@@ -3,7 +3,7 @@ import Image from "next/image";
 export function EcbLogo() {
   return (
     <Image
-      src="https://ecbglobal.com.tr/wp-content/uploads/2024/05/logo-ecb.png"
+      src="https://storage.googleapis.com/aai-web-samples/logo-white-1.png"
       alt="ECB Global Logo"
       width={160}
       height={40}
