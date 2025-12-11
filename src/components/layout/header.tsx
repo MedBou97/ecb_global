@@ -12,10 +12,7 @@ import {
   Globe,
   Mail,
   ChevronDown,
-  Rocket,
   Home as HomeIcon,
-  FileSignature,
-  Briefcase,
 } from 'lucide-react';
 
 import { cn } from '@/lib/utils';
@@ -24,6 +21,7 @@ import {
   DropdownMenu,
   DropdownMenuContent,
   DropdownMenuItem,
+  DropdownMenuSeparator,
   DropdownMenuTrigger,
 } from '@/components/ui/dropdown-menu';
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
@@ -125,21 +123,24 @@ export function Header() {
                     align="start"
                     className="w-64 animate-in fade-in-0 zoom-in-95"
                   >
-                    {link.subLinks.map((subLink) => (
-                      <DropdownMenuItem key={subLink.label} asChild>
-                        <Link href={subLink.href} className="flex items-center gap-2">
-                          <span>{subLink.label}</span>
-                        </Link>
-                      </DropdownMenuItem>
+                    {link.subLinks.map((subLink, index) => (
+                      <React.Fragment key={subLink.href}>
+                        <DropdownMenuItem asChild>
+                          <Link href={subLink.href} className="font-submenu">
+                            {subLink.label}
+                          </Link>
+                        </DropdownMenuItem>
+                        {index < link.subLinks.length - 1 && <DropdownMenuSeparator />}
+                      </React.Fragment>
                     ))}
                   </DropdownMenuContent>
                 </DropdownMenu>
               </div>
             ) : (
-              <Button key={link.label} asChild variant="ghost">
+              <Button key={link.label} asChild variant="ghost" className="text-lg font-headline font-medium">
                 <Link
                   href={link.href!}
-                  className="rounded-md px-3 py-2 text-lg font-headline font-medium transition-colors hover:bg-accent/50 hover:text-primary"
+                  className="rounded-md px-3 py-2 transition-colors hover:bg-accent/50 hover:text-primary"
                 >
                   {link.label}
                 </Link>
