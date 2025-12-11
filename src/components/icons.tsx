@@ -1,7 +1,13 @@
+import Image from "next/image";
+
 export function EcbLogo() {
   return (
-    <span className="text-2xl font-bold font-logo text-primary tracking-tight">
-      ECB Global
-    </span>
+    <Image
+      src="https://ecbglobal.com.tr/wp-content/uploads/2024/05/logo-ecb.png"
+      alt="ECB Global Logo"
+      width={160}
+      height={40}
+      priority
+    />
   );
 }
