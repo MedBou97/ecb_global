@@ -1,7 +1,5 @@
 import Image from 'next/image';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
-import { Button } from '@/components/ui/button';
-import Link from 'next/link';
 
 export function HeroSection() {
   const heroImage = PlaceHolderImages.find((img) => img.id === 'hero-background');
@@ -19,21 +17,38 @@ export function HeroSection() {
         />
       )}
       <div className="absolute inset-0 bg-black/60" />
-      <div className="relative z-10 flex h-full items-center justify-center text-center">
+      <div className="relative z-10 flex h-full items-center justify-start text-left">
         <div className="container mx-auto px-4 md:px-6">
-          <div className="max-w-3xl mx-auto">
-            <h1 className="text-4xl font-extrabold tracking-tight text-white sm:text-5xl md:text-6xl font-headline">
-              Finansal Yönetim Danışmanlığı
-            </h1>
-            <h2 className="mt-4 text-2xl font-semibold text-accent sm:text-3xl font-headline">ECB GLOBAL</h2>
-            <p className="mt-6 text-lg text-gray-200 md:text-xl">
-              Finans süreçlerini uçtan uca yönetecek uzman desteği için iletişime geçebilirsiniz.
-            </p>
-            <div className="mt-8">
-              <Button asChild size="lg" className="animate-pulse-slow">
-                <Link href="#contact">İletişime Geç</Link>
-              </Button>
+          <div className="max-w-2xl relative">
+            
+            <div
+              className="absolute -top-16 -right-12 md:-right-32 w-64 h-64 md:w-80 md:h-80 opacity-50"
+              style={{
+                background: 'linear-gradient(to right, #eab308, #84cc16, #22d3ee, #a855f7)',
+                clipPath: 'polygon(0% 0%, 100% 0%, 100% 4px, 4px 4px, 4px 100%, 0 100%)',
+                transform: 'rotate(180deg)'
+              }}
+            />
+            <div
+               className="absolute -bottom-16 -left-12 md:-left-24 w-64 h-64 md:w-80 md:h-80 opacity-50"
+               style={{
+                background: 'linear-gradient(to right, #eab308, #84cc16, #22d3ee, #a855f7)',
+                clipPath: 'polygon(0% 0%, 100% 0%, 100% 4px, 4px 4px, 4px 100%, 0 100%)'
+               }}
+            />
+
+            <div className="relative">
+              <p className="text-sm font-semibold uppercase tracking-widest text-accent font-headline">
+                Geleceği Güvenle Şekillendirin
+              </p>
+              <h1 className="mt-4 text-4xl font-extrabold tracking-tight text-white sm:text-5xl md:text-6xl font-headline">
+                Bugünün liderleri, nasıl yarının liderlerine dönüşüyor?
+              </h1>
+              <p className="mt-6 text-lg text-gray-200 md:text-xl">
+                Proaktif eylemlerin şirketler için nasıl değerli stratejik fırsatlar sunabileceğini ortaya koyuyoruz. Detaylar için bizimle iletişime geçin.
+              </p>
             </div>
+
           </div>
         </div>
       </div>
