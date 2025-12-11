@@ -102,7 +102,7 @@ export function Footer() {
             <Link href="#" aria-label="X">
               <XIcon className="h-5 w-5 transition-colors hover:text-primary" />
             </Link>
-            <Link href="#" aria-label="LinkedIn">
+            <Link href="https://www.linkedin.com/company/ecb-international-consulting/" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
               <Linkedin className="h-5 w-5 transition-colors hover:text-primary" />
             </Link>
             <Link href="#" aria-label="Facebook">
